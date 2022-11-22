@@ -1,0 +1,101 @@
+.shop{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $primary-background-color;
+}
+
+.card{
+    display: flex;
+    margin-bottom: 2rem;
+    min-height: 480px;
+    height: fit-content;
+    .card-body{
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end!important;
+        
+        .card-title{
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $dark-text-color;
+        }
+        .card-text{
+            font-size: 1rem;
+            color: $paragraph-text-color;
+
+            .instock{
+                color: green;
+                font-weight: bold;
+            }
+            .notinstock{
+                color: red;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.buttons-ae{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 2rem;
+
+    .btn{
+        width: 150px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+.edit-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    .btn{
+        width: 150px;
+    }
+}
+.admin-login-form{
+    height: fit-content;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-shop-log{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@media only screen and (max-width: 1280px){
+    .edit-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    .buttons-ae{
+        flex-direction: column;
+        gap: 0.5rem;        
+    }
+
+    .edit-buttons{
+        flex-direction: row;
+        gap: 0.5rem;
+        .btn{
+            width: 100px;
+        }
+    }
+}

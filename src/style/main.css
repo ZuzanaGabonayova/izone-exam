@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+nav {
+  background-color: none;
+  height: 80px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #1f1f28;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .navbar-brand {
+  width: auto;
+  margin-left: 2rem;
+}
+
+nav #navbar-nav {
+  margin-left: 1rem !important;
+}
+
+nav ul {
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav ul li a {
+  color: #f4f4f4 !important;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #a3a3a3 !important;
+  text-decoration: none !important;
+}
+
+nav ul .cart-icon {
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+  -webkit-box-align: end !important;
+      -ms-flex-align: end !important;
+          align-items: flex-end !important;
+}
+
+@media only screen and (max-width: 990px) {
+  nav {
+    height: auto;
+    /* .navbar-toggler{
+            border: 1px solid $light-neon-green;
+        }
+ */
+  }
+  nav #navbar-nav {
+    margin-left: 0rem !important;
+  }
+  nav .navbar-brand {
+    margin-left: 0rem;
+  }
+  nav ul {
+    margin-right: 0rem;
+    gap: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#about {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 100vh;
+}
+
+#about .hero-img {
+  background-position: cover;
+}
+
+#about .aboutpage {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#about .aboutpage .intro .about-container {
+  margin-top: 2rem;
+  padding: 2rem 6rem;
+}
+
+#about .aboutpage .intro .about-container h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #1f1f28;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#about .aboutpage .intro .about-container h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  text-align: justify;
+  color: #333333;
+}
+
+#about .aboutpage .intro .about-container h2 .shopnow {
+  color: #321c9b;
+}
+
+#about .aboutpage .intro .about-container p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  text-align: justify;
+  color: #6d6d6d;
+}
+
+@media only screen and (max-width: 990px) {
+  #about .hero-img {
+    margin-top: 125px;
+  }
+  #about .aboutpage .intro .about-container {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+  }
+}
+
+.shop {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f1f28;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+  min-height: 480px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.card .card-body {
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+}
+
+.card .card-body .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+.card .card-body .card-text {
+  font-size: 1rem;
+  color: #6d6d6d;
+}
+
+.card .card-body .card-text .instock {
+  color: green;
+  font-weight: bold;
+}
+
+.card .card-body .card-text .notinstock {
+  color: red;
+  font-weight: bold;
+}
+
+.buttons-ae {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.buttons-ae .btn {
+  width: 150px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttons-ae .btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.edit-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.edit-buttons .btn {
+  width: 150px;
+}
+
+.admin-login-form {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin-shop-log {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 1280px) {
+  .edit-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .buttons-ae {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.5rem;
+  }
+  .edit-buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0.5rem;
+  }
+  .edit-buttons .btn {
+    width: 100px;
+  }
+}
+
+.cart-container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 50vh;
+}
+
+.cart-container .cart {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f1f28;
+}
+
+.cart-container .stufff {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  background-color: #1f1f28;
+  height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .row {
+  width: 80vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .copyright .copy {
+  color: #f4f4f4;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 !important;
+}
+
+footer .admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: -1.7rem;
+}
+
+footer .admin .admin-link {
+  color: #6d6d6d !important;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 !important;
+}
+
+footer .admin .admin-link:hover {
+  color: #a3a3a3 !important;
+  text-decoration: none !important;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,71 @@
+#about{
+    height: fit-content;
+    min-height: 100vh;
+
+    .hero-img{
+        background-position: cover;
+    }
+
+    .aboutpage{
+        height: fit-content;
+
+        .intro{
+
+            .about-container{
+                margin-top: 2rem;
+                padding: 2rem 6rem;
+
+                h1{
+                    font-size: 3rem;
+                    font-weight: 600;
+                    color: $primary-background-color;
+                    text-align: center;
+                    margin-bottom: 1.5rem;
+                }
+
+                h2{
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    margin-top: 1rem;
+                    text-align: justify;
+                    color: $dark-text-color;
+
+                    .shopnow{
+                        color: $blue-color;
+                    }
+                }
+
+                p{
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    margin-top: 1rem;
+                    text-align: justify;
+                    color: $paragraph-text-color;
+                }
+            }
+
+        }
+    }
+}
+
+
+@media only screen and (max-width: 990px){
+    #about{
+    
+        .hero-img{
+            margin-top: 125px;
+        }
+    
+        .aboutpage{
+    
+            .intro{
+    
+                .about-container{
+                    margin-top: 1rem;
+                    padding: 1rem 2rem;
+                }
+    
+            }
+        }
+    }
+}

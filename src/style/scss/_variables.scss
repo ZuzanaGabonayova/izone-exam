@@ -1,0 +1,20 @@
+$headings-color: #1d0237;
+$light-text-color: #f4f4f4;
+$dark-text-color: #333333;
+$paragraph-text-color: #6d6d6d;
+$body-background-color: #ffffff;
+$primary-background-color: #1f1f28;
+$blue-color: #321c9b;
+$hover-color: #a3a3a3;
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a{
+    &:hover{
+        text-decoration: none!important;
+    }
+}
